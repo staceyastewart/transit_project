@@ -1,1 +1,7 @@
 index.html.erb
+
+<%= form_for :stop, url: "/stop" do |f| %>
+  <%= label_tag(:end, "Destination") %>
+  <%= text_field_tag :end %>
+  <%= f.submit "Go here" %>
+<% end %>
